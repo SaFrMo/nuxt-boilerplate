@@ -13,7 +13,8 @@ Boilerplate for a new Nuxt project, including:
     nuxt() {
         npx create-nuxt-app "$1"
         cd "$1"
-        find . -name \"README.md\" -delete
+        find . -name "README.md" -delete
+        rm ./components/Logo.vue
         degit safrmo/nuxt-boilerplate -f
         npm i node-sass sass-loader -D
         npm i lodash

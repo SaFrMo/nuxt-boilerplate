@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import _kebabCase from 'lodash/kebabCase'
 
 // globally register everything in the /components folder
 export default async () => {

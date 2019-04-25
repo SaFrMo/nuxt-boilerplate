@@ -4,6 +4,7 @@ Boilerplate for a new Nuxt project, including:
     -   `~/components/MyComponent.vue` becomes `<my-component>`
     -   `~/components/grouped/Component.vue` becomes `<grouped-component>`
 -   A simplified `pages/index.vue`
+-   All `.scss` vars/mixins/functions in `~/assets/scss` included globally using [style-resources](https://github.com/nuxt-community/style-resources-module) module
 
 ## Recommended Workflow
 
@@ -16,7 +17,7 @@ Boilerplate for a new Nuxt project, including:
         find . -name "README.md" -delete
         rm ./components/Logo.vue
         degit safrmo/nuxt-boilerplate -f
-        npm i node-sass sass-loader -D
+        npm i node-sass sass-loader @nuxt/style-resources -D
         npm i lodash
         cd ..
     }

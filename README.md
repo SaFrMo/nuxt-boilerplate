@@ -12,7 +12,7 @@ Boilerplate for a new Nuxt project, including:
 1. Either:
     1. Run:
         1. `PROJECT_NAME=my-new-project` (replace `my-new-project` with your project name)
-        1. `npx create-nuxt-app $PROJECT_NAME && cd $PROJECT_NAME && find . -name README.md -delete -o -name Logo.vue -delete && degit safrmo/nuxt-boilerplate#boardgame -f && npm i node-sass sass-loader @nuxt/style-resources -D && npm i lodash && cd ..`
+        1. `npx create-nuxt-app $PROJECT_NAME && cd $PROJECT_NAME && find . -name README.md -delete -o -name Logo.vue -delete && degit safrmo/nuxt-boilerplate#boardgame -f && npm i node-sass sass-loader @nuxtjs/style-resources -D && npm i lodash && && git submodule add https://github.com/safrmo/boardgame-utils && git submodule add https://github.com/safrmo/vue-three-wrap && cd ..`
     1. Or, use this bash script:
         ```
         nuxt() {

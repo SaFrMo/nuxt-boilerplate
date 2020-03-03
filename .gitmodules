@@ -1,6 +1,0 @@
-[submodule "boardgame-utils"]
-	path = boardgame-utils
-	url = https://github.com/safrmo/boardgame-utils
-[submodule "vue-three-wrap"]
-	path = vue-three-wrap
-	url = https://github.com/safrmo/vue-three-wrap

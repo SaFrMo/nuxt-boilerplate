@@ -9,17 +9,21 @@ Boilerplate for a new Nuxt project, including:
 ## Recommended Workflow
 
 1. Install `degit` if you don't have it: `npm i -g degit`
-1. Use this bash script:
-    ```
-    nuxt() {
-        npx create-nuxt-app "$1"
-        cd "$1"
-        find . -name "README.md" -delete
-        rm ./components/Logo.vue
-        degit safrmo/nuxt-boilerplate -f
-        npm i node-sass sass-loader @nuxt/style-resources -D
-        npm i lodash
-        cd ..
-    }
-    ```
-1. Run `nuxt my-new-project-name` to run `create-nuxt-app`, remove extra Nuxt boilerplates, install this boilerplate, and add SASS and Lodash
+1. Either:
+    1. Run:
+        1. `PROJECT_NAME=my-new-project` (replace `my-new-project` with your project name)
+        1. `npx create-nuxt-app $PROJECT_NAME && cd $PROJECT_NAME && find . -name README.md -delete -o -name Logo.vue -delete && degit safrmo/nuxt-boilerplate#boardgame -f && npm i node-sass sass-loader @nuxt/style-resources -D && npm i lodash && cd ..`
+    1. Or, use this bash script:
+        ```
+        nuxt() {
+            npx create-nuxt-app "$1"
+            cd "$1"
+            find . -name "README.md" -delete
+            rm ./components/Logo.vue
+            degit safrmo/nuxt-boilerplate -f
+            npm i node-sass sass-loader @nuxt/style-resources -D
+            npm i lodash
+            cd ..
+        }
+        ```
+    1. Run `nuxt my-new-project-name` to run `create-nuxt-app`, remove extra Nuxt boilerplates, install this boilerplate, and add SASS and Lodash

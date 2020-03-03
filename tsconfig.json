@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "outDir": "./lib/built",
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node"
+    },
+    "include": ["./lib/ts/**/*"]
+}

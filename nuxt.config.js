@@ -36,7 +36,11 @@ export default {
     /*
      ** Plugins to load before mounting the App
      */
-    plugins: ['~/plugins/global-components'],
+    plugins: [
+        { src: '~/plugins/browser', mode: 'client' },
+        { src: '~/plugins/exposeStore', mode: 'client' },
+        '~/plugins/global-components'
+    ],
 
     /*
      ** Nuxt.js modules

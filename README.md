@@ -27,3 +27,7 @@ Boilerplate for a new Nuxt project, including:
         }
         ```
         1. Then run `nuxt my-new-project-name` to run `create-nuxt-app`, remove extra Nuxt boilerplates, install this boilerplate, and add SASS and Lodash.
+
+## TODO
+
+1. Switch to package.json and local script instead of degit

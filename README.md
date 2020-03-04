@@ -8,5 +8,4 @@ Boilerplate for a new Nuxt project, including:
 
 ## Recommended Workflow
 
-1. Copy the script in `scripts/install.sh` and run locally, or do:
-   `curl -o- https://raw.githubusercontent.com/SaFrMo/nuxt-boilerplate/boardgame/scripts/install.sh | bash`
+1. Copy the script in `scripts/install.sh` and run locally.

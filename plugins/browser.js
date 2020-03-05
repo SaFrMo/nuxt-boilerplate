@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { plugin as boardgamePlugin } from 'boardgame-utils'
+import { plugin as boardgamePlugin } from '~/boardgame-utils'
 import { options } from '~/lib/built'
 import { constants } from '~/lib/built/constants'
 

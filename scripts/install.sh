@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# project name
 (
+# project name
 echo Enter your project name:
 read PROJECT_NAME
 
@@ -13,16 +13,19 @@ find . -name README.md -delete -o -name Logo.vue -delete
 # degit boilerplate into the new project
 degit safrmo/nuxt-boilerplate\#boardgame -f
 
+# open the new project
+atom .
+
 # install dependencies
 npm i node-sass sass-loader @nuxtjs/style-resources concurrently -D
-npm i lodash
+npm i lodash boardgame.io three
 
 # add submodules
 git submodule add https://github.com/safrmo/boardgame-utils
 git submodule add https://github.com/safrmo/vue-three-wrap
 
-# edit package.json
-PROJECT_NAME=$PROJECT_NAME PACKAGE_JSON="$(cat package.json)" node > package.json <<EOF
+    # edit package.json
+env PROJECT_NAME=$PROJECT_NAME PACKAGE_JSON="$(cat package.json)" node > package.json << EOF
 const package = JSON.parse(process.env.PACKAGE_JSON)
 package.scripts.dev = 'concurrently \"tsc -w\" \"' + package.scripts.dev + '\"'
 console.log(JSON.stringify(package))

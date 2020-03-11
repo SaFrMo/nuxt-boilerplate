@@ -1,4 +1,4 @@
-Boilerplate for a new Nuxt project, including:
+Boilerplate for a new Nuxt + boardgame.io project, including:
 
 -   Automatic global registration for everything in the `~/components` directory
     -   `~/components/MyComponent.vue` becomes `<my-component>`
@@ -9,3 +9,18 @@ Boilerplate for a new Nuxt project, including:
 ## Recommended Workflow
 
 1. Copy the script in `scripts/install.sh` and run locally.
+
+## TODO
+
+-   Structure that acts like enum but can export a list of values:
+
+```
+enum Thing {
+    Example1,
+    Example2
+}
+
+const ThingOptions = // something that exports ['Example1', 'Example2']
+
+export {Thing, ThingOptions}
+```

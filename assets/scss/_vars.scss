@@ -1,2 +1,7 @@
-$white: white;
-$black: black;
+@mixin fill($position: absolute) {
+    position: $position;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

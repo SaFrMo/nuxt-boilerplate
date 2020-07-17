@@ -7,6 +7,8 @@ export default {}
 </script>
 
 <style>
+@import 'assets/scss/base.scss';
+
 .home {
 }
 </style>
